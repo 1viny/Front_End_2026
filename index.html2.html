@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Biar Studio</title>
+</head>
+<body>
+
+    
+
+    <div class="main"><b>Bem-vindo(a) a esta página dedicada ao estudo de Árvores Binárias</b> 🌳<br></div>
+<h2>O que contém nesse artigo: </h2>
+   
+    <nav> 
+      <ul>
+        <li> <a href="#árvorebinaria" target="_self"> O que é uma Árvore Binária de Busca?</a></li>
+        <li> <a href="#implementação em C" target="_self"> Exemplo de implementação em C#</a></li>
+        <li><a href="#implementação em Java" target="_self"> Exemplo de implementação em Java</a></li>
+        <li> <a href="#aplicações" target="_self">Aplicações</a></li>
+        <li> <a href="#conclusão" target="_self">Conclusão</li>
+        <li><a href="#contato" target="_self"> Contato</a></li>
+     </ul>
+    </nav><br>
+
+
+<h4>Este espaço foi criado com o objetivo de explorar, de forma prática e teórica, os principais conceitos relacionados às árvores binárias,<p></p>uma das estruturas de dados mais importantes na Ciência da Computação. Aqui você encontrará explicações claras, exemplos ilustrados e implementações que ajudam<p></p> a compreender desde os fundamentos até aplicações.A estrutura da árvore binária de busca permite uma busca eficiente em tempo logarítmico, ou seja, O(log n), onde n é o número de elementos na<p></p> árvore. Essa eficiência é alcançada porque a árvore é estruturada de tal forma que as comparações para encontrar um elemento são realizadas em caminhos únicos e ordenados.</h4><br><br>
+
+<img src="https://arquivo.devmedia.com.br/artigos/Higor_Medeiros/ArvoreBinaria/ArvoreBinaria1.jpg">
+
+<h3><b><i>O que é uma Árvore Binária de Busca?</i></b><br>------------------------------------ </h3>
+
+<p>Uma Árvore Binária de Busca é uma estrutura de dados que permite armazenar e pesquisar informações de maneira eficiente. É composta por nós que podem ter até dois filhos, um à esquerda e outro à direita. Cada nó na árvore contém um valor único e os nós à esquerda têm valores menores do que o nó pai, enquanto os nós à direita têm valores maiores.</p><br>
+ 
+<img src="https://wiki.sj.ifsc.edu.br/images/3/3a/Crt-decisao.png"> 
+<h4>Uma Árvore de decisão</h4><br>
+
+<img src="https://wiki.sj.ifsc.edu.br/images/5/5c/Prg2-Arvore-binaria-real.png">
+<h4>Uma Árvore real... e binária</h4><br><br>
+
+<h3><b><i>Implementação em C#</i></b><br>------------------------------------ </h3>
+
+<p>Agora que já se conhece um pouco mais sobre o que é e como funciona uma árvore binária, vejamos abaixo os algoritmos para inserção e exclusão em árvores binárias implementados na linguagem C#.
+
+Segue na Listagem 1 o código de exemplo para inserção em árvores binárias.</p><br>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnO7xHwqWozxbBWKOaRGrH0QIH1yIk9Wjq7g&s.png"><br>
+
+<p>A classe Node representa um nó da árvore, que contém um valor inteiro (Value) e duas referências a outros nós, um para o filho à esquerda (Left) e outro para o filho à direita (Right).
+
+A classe BinarySearchTree é a árvore em si, e contém uma referência para o nó raiz (Root). A classe oferece um método Insert que insere um novo nó na árvore. Esse método começa procurando o lugar correto para inserir o novo nó, percorrendo a árvore a partir do nó raiz e seguindo sempre para a esquerda se o valor do novo nó for menor que o valor do nó atual, ou para a direita se for maior ou igual.</p><br><br>
+
+<h3><b><i>Implementação em Java</i></b><br>------------------------------------ </h3>
+
+<p> Vejamos abaixo os algoritmos para inserção e exclusão em árvores binárias implementados na linguagem Java.
+
+Segue na Listagem 2 o código de exemplo para inserção em árvores binárias.</p>
+
+<img src="https://emersonbsi.wordpress.com/wp-content/uploads/2015/06/1percursoarvore.png">
+
+<p>Note que a estrutura da classe Node é a mesma, com os atributos value, left e right. Já a classe BinarySearchTree também é semelhante, com o atributo root, o construtor que inicializa o atributo como null, e o método insert que insere um novo nó na árvore seguindo as regras de uma árvore binária de busca.</p><br><br>
+
+
+<p>Podemos implentar o  método de Árvores Binárias, em outras linguagens também.</p><br><br>
+
+<h3><b><i>Conclusão</i></b><br>------------------------------------ </h3>
+
+<p>O estudo de árvores binárias revela a importância fundamental dessas estruturas na organização e manipulação eficiente de dados. Por meio de sua natureza hierárquica, árvores binárias permitem buscas, inserções e remoções que, quando bem balanceadas, apresentam desempenho significativamente superior ao de estruturas lineares, como listas simples.<br></br>
+A implementação em C# e Java demonstra como os conceitos teóricos são traduzidos em código de forma clara e estruturada. Embora as duas linguagens tenham sintaxes e ecossistemas diferentes, ambas oferecem recursos robustos orientados a objetos que facilitam a criação de nós, a definição de relações hierárquicas e a implementação dos principais algoritmos de percorrimento, como pré-ordem, em ordem e pós-ordem. A semelhança entre as abordagens reforça que o mais importante não é a linguagem escolhida, mas sim a compreensão dos princípios que regem o funcionamento da estrutura.<br>
+</p><br>
+
+<p>Escreva o que você aprendeu: </p>
+ <label for="mensagem">Mensagem:</label><br>
+            <textarea name="mensagem" rows="5" cols="30"></textarea><br><br>
+
+<form>
+        <fieldset>
+            <legend>Me enviei uma mensagem</legend>
+
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label>Gênero:</label><br>
+            <input type="radio" name="genero"> Masculino
+            <input type="radio" name="genero"> Feminino<br><br>
+
+            <label>O site te ajudou? :</label><br>
+            <input type="checkbox"> Sim
+            <input type="checkbox"> Não, sou lerdo e não aprendi <br><br>
+
+            <label for="area">O que podemos melhorar? :</label>
+            <select id="area">
+                <option>Estrutura do Site</option>
+                <option>Conteúdos</option>
+                <option>Outros</option>
+            </select><br><br>
+
+            
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea name="mensagem" rows="5" cols="30"></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+            <input type="button" value="Botão">
+            <button>Botão HTML</button>
+
+        </fieldset>
+    </form>
+
+
+
+<h3><b><i>Contato</i></b><br>------------------------------------ </h3>
+
+<p>Email: eduardovinicyus393@gmail.com
+</p><br>
+
+<footer>
+    <b>@Direitos autorais</b>
+</footer>
+</body>
+</html>
