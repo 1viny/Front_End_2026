@@ -1,0 +1,187 @@
+
+body {
+    background: #f4f4f9;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ================================
+   ESTRUTURA PRINCIPAL
+================================ */
+#pagina {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ================================
+   CABEÇALHOS
+================================ */
+header {
+    background: #1e1e2e;
+    color: #fff;
+    padding: 30px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+/* ================================
+   MENUS
+================================ */
+nav {
+    background: #2e2e3e;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 8px 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #414161;
+}
+
+/* ================================
+   SEÇÕES E ARTIGOS
+================================ */
+section {
+    background: #ffffff;
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #0001;
+}
+
+section h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+article {
+    margin-bottom: 20px;
+    background: #fafafa;
+    padding: 15px;
+    border-left: 5px solid #6a5acd;
+    border-radius: 5px;
+}
+
+/* ================================
+   TABELAS
+================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #bbb;
+    text-align: left;
+}
+
+table th {
+    background: #6a5acd;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background: #f1f1ff;
+}
+
+/* ================================
+   LISTAS E CÓDIGOS
+================================ */
+code, pre {
+    background: #282c34;
+    color: #dcdcdc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+pre {
+    overflow-x: auto;
+    margin-top: 5px;
+}
+
+/* ================================
+   FORMULÁRIOS
+================================ */
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 2px solid #6a5acd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #6a5acd;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    background: #6a5acd;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #4a3db8;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+    background: #1e1e2e;
+    color: #ddd;
+    text-align: center;
+}
