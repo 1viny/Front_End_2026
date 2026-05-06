@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Botão com Imagem</title>
+ 
+</head>
+<body>
+
+    <style>
+    button {
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    img {
+      width: 200px;
+      transition: transform 0.1s;
+    }
+
+    /*efeito ao clicar, usei o chat rs */ 
+    img:active {
+      transform: scale(0.95);
+    }
+  </style>
+
+  <button id="botao">
+    <img src="botao.png" alt="botão vermelho">
+  </button>
+
+  <p>Cliques: <span id="contador">0</span></p>
+
+  <script>
+    let cliques = 0;
+
+    const botao = document.getElementById("botao");
+    const contador = document.getElementById("contador");
+
+    botao.addEventListener("click", function() {
+      cliques++;
+      contador.innerText = cliques;
+    });
+  </script>
+
+</body>
+</html>
